@@ -27,6 +27,12 @@
 
 .header-nav-link {
   text-decoration: none;
+  color: #f6f6f6;
+}
+
+.header-nav-link:hover {
+  transition: all ease .3s;
+  text-shadow: #fff 1px 1px 1px;
   color: #fff;
 }
 
