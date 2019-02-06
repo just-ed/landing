@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Шаурма с бесплатной доставкой</title>
 
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
   <link rel="stylesheet" href="css/reset.css">
@@ -17,6 +19,7 @@
   <link rel="stylesheet" href="css/prices.css">
   <link rel="stylesheet" href="css/feedback.css">
   <link rel="stylesheet" href="css/action.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="js/parallax.js-1.5.0/parallax.min.js"></script>
@@ -41,6 +44,9 @@
           <li class="header-nav-item">
             <a class="header-nav-link text-medium" href="#feedback">Отзывы</a>
           </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link text-medium" href="#action">Заказать</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -54,6 +60,8 @@
 
   <div class="features text-center" id="features">
     <div class="container">
+      <h2 class="title-medium text-center">О нас</h2>
+
       <div class="column-1-3">
         <div class="feature-item">
           <div class="feature-image">
@@ -147,42 +155,44 @@
   </div>
 
   <div class="feedback text-center" id="feedback">
-    <div class="container">
-      <h2 class="title-medium text-center">Отзывы</h2>
+    <div class="buffer-both">
+      <div class="container">
+        <h2 class="title-medium text-center">Отзывы</h2>
 
-      <div class="customers">
-        <div class="column-1-3 buffer-top">
-          <div class="customer">
-            <div class="customer-photo">
-              <img src="images/feedback/roma.png" alt="Roma">
-            </div>
-            <div class="customer-details">
-              <h3 class="customer-name text-lead">Рома</h3>
-              <p class="feedback-text text-small">Не всегда успеваю перекусить перед важной встречей. "Шаурмен" выручает!</p>
+        <div class="customers">
+          <div class="column-1-3 buffer-top">
+            <div class="customer">
+              <div class="customer-photo">
+                <img src="images/feedback/roma.png" alt="Roma">
+              </div>
+              <div class="customer-details">
+                <h3 class="customer-name text-lead">Рома</h3>
+                <p class="feedback-text text-small">Не всегда успеваю перекусить перед важной встречей. "Шаурмен" выручает!</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column-1-3 buffer-top">
-          <div class="customer">
-            <div class="customer-photo">
-              <img src="images/feedback/elon.png" alt="Elon">
-            </div>
-            <div class="customer-details">
-              <h3 class="customer-name text-lead">Илон</h3>
-              <p class="feedback-text text-small">Секрет моей продкутивности - шаурма! Заряжает энергией на весь день!</p>
+          <div class="column-1-3 buffer-top">
+            <div class="customer">
+              <div class="customer-photo">
+                <img src="images/feedback/elon.png" alt="Elon">
+              </div>
+              <div class="customer-details">
+                <h3 class="customer-name text-lead">Илон</h3>
+                <p class="feedback-text text-small">Секрет моей продкутивности - шаурма! Заряжает энергией на весь день!</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column-1-3 buffer-top">
-          <div class="customer">
-            <div class="customer-photo">
-              <img src="images/feedback/voz.png" alt="Voz">
-            </div>
-            <div class="customer-details">
-              <h3 class="customer-name text-lead">Воз</h3>
-              <p class="feedback-text text-small">Всегда беру по две! Ом-ном-ном...</p>
+          <div class="column-1-3 buffer-top">
+            <div class="customer">
+              <div class="customer-photo">
+                <img src="images/feedback/voz.png" alt="Voz">
+              </div>
+              <div class="customer-details">
+                <h3 class="customer-name text-lead">Воз</h3>
+                <p class="feedback-text text-small">Всегда беру по две! Ом-ном-ном...</p>
+              </div>
             </div>
           </div>
         </div>
@@ -190,18 +200,44 @@
     </div>
   </div>
 
-  <div class="action text-center">
-    <div class="buffer-both-large">
-      <div class="action-text buffer-bottom-large">
-        <p class="text-lead">Страница закончилась,</p>
-        <p class="text-lead">а шаурма еще нет... :)</p>
+  <div class="action text-center" data-parallax="scroll" data-image-src="images/intro_background.jpg" id="action">
+    <div class="buffer-both">
+      <div class="action-details buffer-bottom-large">
+        <p class="text-lead">Страница закончилась, а шаурма еще нет... :)</p>
+        <p class="title-medium buffer-top-large">Закажите прямо сейчас!</p>
       </div>
-      <div class="action-button">
-        <a class="button button-green buffer-bottom" href="#">
-          <p class="text-medium">ХОЧУ ШАУРМУ!</p>
-        </a>
+
+      <div class="form">
+        <form action="#" method="post">
+          <p class="buffer-both">
+            <select class="form-select text-medium" name="choice">
+              <option class="selected" selected>Выберите шаурму</option>
+              <option value=vegan>Веджи</option>
+              <option value="classic">Классик</option>
+              <option value="king_size">KING SIZE</option>
+            </select>
+          </p>
+          <p class="buffer-both">
+            <input class="form-input-text text-medium" type="text" name="order[phone]" placeholder="Телефон">
+          </p>
+          <p class="buffer-both">
+            <input class="form-input-text text-medium" type="comment" name="order[address]" placeholder="Адрес доставки">
+          </p>
+
+          <div class="buffer-both-large">
+            <input type="submit" class="button button-green" value="ХОЧУ ШАУРМУ!">
+          </div>
+        </form>
       </div>
     </div>
+  </div>
+
+  <div class="footer text-center">
+    <footer>
+      <p>ООО "Шаурмен", 8 (495) 777-33-55</p>
+      <p>Москва, Манежная площадь, 1, стр. 2, ТК "Охотный ряд"</p>
+      <p>ИНН 123456789012, ОГРН 123456789012345</p>
+    </footer>
   </div>
 </body>
 </html>
