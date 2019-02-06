@@ -1,0 +1,16 @@
+.features {
+  padding: 40px 0;
+  background: #f6f6f6;
+}
+
+.feature-item {
+  margin: 0 20px;
+}
+
+.feature-image {
+  padding-bottom: 10px;
+}
+
+.feature-title {
+  word-wrap: break-word;
+}

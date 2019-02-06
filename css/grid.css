@@ -1,0 +1,48 @@
+.buffer-top {
+  margin-top: 20px;
+}
+
+.buffer-bottom {
+  margin-bottom: 20px;
+}
+
+.buffer-bottom-large {
+  margin-bottom: 40px;
+}
+
+.buffer-both {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.buffer-both-large {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.column-1-3 {
+  float: left;
+  width: 33.33%;
+}
+
+.container:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+@media (max-width: 860px) {
+  .column-1-3 {
+    float: none;
+    width: auto;
+    text-align: center;
+  }
+}

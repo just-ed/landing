@@ -1,0 +1,17 @@
+.feedback {
+  padding: 20px 0;
+  background: #f6f6f6;
+}
+
+.customers {
+  padding: 20px 0;
+}
+
+.customer {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.customer-photo {
+  display: inline-block;
+}
