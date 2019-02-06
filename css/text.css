@@ -46,9 +46,10 @@ body {
 }
 
 
-@media (max-width: 860px) {
-  .title-large {
-    font-size: 4em;
-    margin-bottom: .5em;
-  }
+@media (max-width: 1080px) {
+	body {
+	  font-family: "Trebuchet MS", sans-serif;
+	  color: #444;
+	  font-size: 24px;
+	}
 }
