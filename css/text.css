@@ -44,12 +44,3 @@ body {
 .text-center {
   text-align: center;
 }
-
-
-@media (max-width: 1080px) {
-	body {
-	  font-family: "Trebuchet MS", sans-serif;
-	  color: #444;
-	  font-size: 24px;
-	}
-}
