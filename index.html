@@ -111,7 +111,7 @@
             </div>
             <div class="fare-footer">
               <div class="fare-order">
-                <a class="button button-green buffer-bottom" href="#">ЗАКАЗАТЬ</a>
+                <a class="button button-green buffer-bottom" href="#action">ЗАКАЗАТЬ</a>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@
             </div>
             <div class="fare-footer">
               <div class="fare-order">
-                <a class="button button-green buffer-bottom" href="#">ЗАКАЗАТЬ</a>
+                <a class="button button-green buffer-bottom" href="#action">ЗАКАЗАТЬ</a>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
             </div>
             <div class="fare-footer">
               <div class="fare-order">
-                <a class="button button-green buffer-bottom" href="#">ЗАКАЗАТЬ</a>
+                <a class="button button-green buffer-bottom" href="#action">ЗАКАЗАТЬ</a>
               </div>
             </div>
           </div>
@@ -208,9 +208,9 @@
       </div>
 
       <div class="form">
-        <form action="#" method="post">
+        <form action="/orders" method="post">
           <p class="buffer-both">
-            <select class="form-select text-medium" name="choice">
+            <select class="form-select text-medium" name="order[choice]" required>
               <option class="selected" selected>Выберите шаурму</option>
               <option value=vegan>Веджи</option>
               <option value="classic">Классик</option>
@@ -218,10 +218,10 @@
             </select>
           </p>
           <p class="buffer-both">
-            <input class="form-input-text text-medium" type="text" name="order[phone]" placeholder="Телефон">
+            <input class="form-input-text text-medium" type="text" name="order[phone]" placeholder="Телефон" required>
           </p>
           <p class="buffer-both">
-            <input class="form-input-text text-medium" type="comment" name="order[address]" placeholder="Адрес доставки">
+            <input class="form-input-text text-medium" type="text" name="order[address]" placeholder="Адрес доставки" required>
           </p>
 
           <div class="buffer-both-large">
